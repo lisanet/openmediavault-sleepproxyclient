@@ -17,8 +17,8 @@
           "leaseTime": {
             "type": "number",
             "required": true,
-            "minimum": 3600,
-            "maximum": 7200
+            "min": 1800,
+            "max": 7200
           },
           "server": {
             "type": "string",

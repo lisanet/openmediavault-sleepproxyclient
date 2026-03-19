@@ -16,6 +16,7 @@ data:
       - type: checkbox
         name: enable
         label: _("Enable")
+        hint: _("Configure the Sleep Proxy Client to allow the system to wake up from sleep when accessed over the network. For more information, see the <a href='https://github.com/awein/SleepProxyClient' target='_blank'>SleepProxyClient</a> project.")
         value: false
       - type: textInput
         name: interfaces
@@ -31,8 +32,8 @@ data:
         hint: _("The time in seconds that the sleep proxy server should keep the host's network configuration. The default is 7200 seconds (2 hours).")
         validators:
           required: true
-          minimum: 3600
-          maximum: 7200
+          min: 1800
+          max: 7200
       - type: divider
         title: _("Advanced Settings")
       - type: textInput
