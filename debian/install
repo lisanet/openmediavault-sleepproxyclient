@@ -1,0 +1,6 @@
+etc/default/*  etc/default/
+usr/share/openmediavault/confdb/create.d/*  usr/share/openmediavault/confdb/create.d/
+usr/share/openmediavault/datamodels/*  usr/share/openmediavault/datamodels/
+usr/share/openmediavault/engined/*   usr/share/openmediavault/engined/
+usr/share/openmediavault/workbench/*  usr/share/openmediavault/workbench/
+srv/salt/omv/deploy/sleepproxyclient/* srv/salt/omv/deploy/sleepproxyclient/

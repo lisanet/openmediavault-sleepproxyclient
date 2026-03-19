@@ -1,0 +1,58 @@
+version: "1.0"
+type: component
+data:
+  name: omv-system-powermgmt-sleepproxyclient-form-page
+  type: formPage
+  config:
+    request:
+      service: SleepProxyClient
+      get:
+        method: getSettings
+      post:
+        method: setSettings
+    fields:
+      - type: divider
+        title: _("General Settings")
+      - type: checkbox
+        name: enable
+        label: _("Enable")
+        value: false
+      - type: textInput
+        name: interfaces
+        label: _("Interfaces")
+        value: "all"
+        hint: _("Comma separated list of network interfaces to use. Use 'all' to use all available interfaces.")
+        validators:
+          required: true
+      - type: numberInput
+        name: leaseTime
+        label: _("Lease Time")
+        value: 7200
+        hint: _("The time in seconds that the sleep proxy server should keep the host's network configuration. The default is 7200 seconds (2 hours).")
+        validators:
+          required: true
+          minimum: 3600
+          maximum: 7200
+      - type: divider
+        title: _("Advanced Settings")
+      - type: textInput
+        name: server
+        label: _("Preferred Sleep Proxy Server")
+        value: ""
+        hint: _("Comma separated list of hostnames of the preferred sleep proxy servers, e.g. ATV.local. Leave blank to use the server with the best properties. Use a wired Apple Tv or HomePod if available.")
+      - type: checkbox
+        name: enableRTC
+        label: _("RTC Wake-up")
+        value: false
+        hint: _("Enable waking up using the RTC Alarm Clock when the lease expires. Acts as a fallback to ensure the system wakes up again even when the Sleep Proxy Servers forgets about this client.")
+      - type: checkbox
+        name: enableDebug
+        label: _("Debug Logging")
+        value: false
+        hint: _("Enable debug logging for troubleshooting purposes. This will log additional information to '/var/log/sleepproxyclient.log' when the sleep proxy client is active.")
+    buttons:
+      - template: submit
+      - template: cancel
+        execute:
+          type: url
+          url: "/system/powermgmt"

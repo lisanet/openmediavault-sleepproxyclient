@@ -1,0 +1,8 @@
+version: "1.0"
+type: route
+data:
+  url: "/system/powermgmt/sleepproxyclient"
+  title: "SleepProxyClient"
+  editing: true
+  notificationTitle: _("Updated SleepProxyClient settings.")
+  component: omv-system-powermgmt-sleepproxyclient-form-page

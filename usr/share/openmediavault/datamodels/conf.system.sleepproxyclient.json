@@ -1,0 +1,36 @@
+{
+  "type": "config",
+  "id": "conf.system.sleepproxyclient",
+  "title": "SleepProxyClient",
+  "queryinfo": {
+    "xpath": "//system/sleepproxyclient",
+    "iterable": false
+  },
+  "properties": {
+    "enable": {
+      "type": "boolean",
+      "default": false
+    },
+    "interfaces": {
+      "type": "string",
+      "default": "all"
+    },
+    "leaseTime": {
+      "type": "number",
+      "default": 7200
+    },
+    "server": {
+      "type": "string",
+      "default": ""
+    },
+    "enableRTC": {
+      "type": "boolean",
+      "default": true
+    },
+    "enableDebug": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
+

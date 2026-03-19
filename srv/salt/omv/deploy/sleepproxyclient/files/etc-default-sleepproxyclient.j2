@@ -1,0 +1,13 @@
+# This file is managed by OpenMediaVault. Do not edit it manually.
+
+SPC_INTERFACES="{{ config['interfaces'] }}"
+SPC_LEASE_TIME={{ config['leaseTime'] }}
+SPC_PREFERRED_PROXIES="{{ config['server'] }}"
+
+SPC_RTC_WAKE={{ '"rtc0"' if config['enableRTC'] else '' }}
+SPC_DEBUG={{ '1' if config['enableDebug'] else '0' }}
+SPC_LOGFILE="/var/log/sleepproxyclient.log"
+{% if not config['enable'] %}
+# sleepproxyclient is disabled, exiting
+exit 0
+{% endif %}
