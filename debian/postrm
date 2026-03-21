@@ -3,13 +3,22 @@ set -e
 
 . /usr/share/openmediavault/scripts/helper-functions
 
-case "$1" in
-  purge)
+remove-actions() {
+    rm -f /etc/default/sleepproxyclient
+    dpkg-divert --package openmediavault-sleepproxyclient --rename --remove /etc/default/sleepproxyclient
     # Activate trigger to rebuild workbench configuration files.
     dpkg-trigger update-workbench
+}
+
+case "$1" in
+  purge)
+    remove-actions
     omv_config_delete "/config/system/sleepproxyclient"
     ;;
-  remove|upgrade|failed-upgrade)
+  remove)
+    remove-actions
+    ;;
+  upgrade|failed-upgrade)
     dpkg-trigger update-workbench
     ;;
   abort-upgrade|abort-remove|abort-deconfigure)

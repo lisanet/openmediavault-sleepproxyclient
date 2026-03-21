@@ -5,6 +5,9 @@ set -e
 
 case "$1" in
   configure)
+    dpkg-divert --package openmediavault-sleepproxyclient --rename --add \
+            --divert /etc/default/sleepproxyclient.dpkg-divert \
+            /etc/default/sleepproxyclient
     # Activate trigger to rebuild workbench configuration files.
     dpkg-trigger update-workbench
     # Initialize and migrate configuration database.

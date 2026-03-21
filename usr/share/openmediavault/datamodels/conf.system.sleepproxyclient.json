@@ -9,7 +9,7 @@
   "properties": {
     "enable": {
       "type": "boolean",
-      "default": false
+      "default": true
     },
     "interfaces": {
       "type": "string",

@@ -2,6 +2,6 @@ version: "1.0"
 type: navigation-item
 data:
   path: 'system.powermgmt.sleepproxyclient'
-  text: 'SleepProxyClient'
+  text: 'SleepProxy Client'
   icon: 'mdi:power-settings'
   url: '/system/powermgmt/sleepproxyclient'

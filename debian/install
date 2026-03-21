@@ -1,4 +1,3 @@
-etc/default/*  etc/default/
 usr/share/openmediavault/confdb/create.d/*  usr/share/openmediavault/confdb/create.d/
 usr/share/openmediavault/datamodels/*  usr/share/openmediavault/datamodels/
 usr/share/openmediavault/engined/*   usr/share/openmediavault/engined/

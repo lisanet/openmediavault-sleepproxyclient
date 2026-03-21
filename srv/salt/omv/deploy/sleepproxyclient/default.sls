@@ -2,7 +2,7 @@
 
 configure_sleepproxyclient:
   file.managed:
-    - name: /etc/default/sleepproxyclient-omv.conf
+    - name: /etc/default/sleepproxyclient
     - source:
       - salt://{{ tpldir }}/files/etc-default-sleepproxyclient.j2
     - template: jinja

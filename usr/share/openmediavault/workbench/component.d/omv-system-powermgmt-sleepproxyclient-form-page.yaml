@@ -17,12 +17,12 @@ data:
         name: enable
         label: _("Enable")
         hint: _("Configure the Sleep Proxy Client to allow the system to wake up from sleep when accessed over the network. For more information, see the <a href='https://github.com/awein/SleepProxyClient' target='_blank'>SleepProxyClient</a> project.")
-        value: false
+        value: true
       - type: textInput
         name: interfaces
         label: _("Interfaces")
         value: "all"
-        hint: _("Comma separated list of network interfaces to use. Use 'all' to use all available interfaces.")
+        hint: _("Comma separated list of network interfaces to use, e.g. enp1s0, wlan0. Use 'all' to use all available interfaces.")
         validators:
           required: true
       - type: numberInput
