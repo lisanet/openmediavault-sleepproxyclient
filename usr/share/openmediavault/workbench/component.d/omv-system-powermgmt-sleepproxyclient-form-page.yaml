@@ -33,7 +33,8 @@ data:
         validators:
           required: true
           min: 1800
-          max: 7200
+          max: 14400
+          patternType: integer
       - type: divider
         title: _("Advanced Settings")
       - type: textInput

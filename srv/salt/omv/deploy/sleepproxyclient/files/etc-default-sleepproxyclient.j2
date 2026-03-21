@@ -1,9 +1,8 @@
 # This file is managed by OpenMediaVault. Do not edit it manually.
-
-SPC_INTERFACES="{{ config['interfaces'] }}"
-SPC_LEASE_TIME={{ config['leaseTime'] }}
-SPC_PREFERRED_PROXIES="{{ config['server'] }}"
-
+#
+SPC_INTERFACES="{{ config['interfaces'] | replace(',', ' ') }}"
+SPC_LEASE_TIME={{ config['leaseTime'] | int }}
+SPC_PREFERRED_PROXIES="{{ config['server'] | replace(',', ' ') }}"
 SPC_RTC_WAKE={{ '"rtc0"' if config['enableRTC'] else '' }}
 SPC_DEBUG={{ '1' if config['enableDebug'] else '0' }}
 SPC_LOGFILE="/var/log/sleepproxyclient.log"
