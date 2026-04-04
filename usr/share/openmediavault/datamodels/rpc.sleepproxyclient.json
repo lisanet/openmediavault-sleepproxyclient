@@ -18,7 +18,7 @@
             "type": "number",
             "required": true,
             "min": 1800,
-            "max": 14400,
+            "max": 28800,
             "patternType": "integer"
           },
           "server": {
