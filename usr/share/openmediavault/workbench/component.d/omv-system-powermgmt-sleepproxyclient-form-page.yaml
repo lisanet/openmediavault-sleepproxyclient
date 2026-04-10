@@ -25,11 +25,25 @@ data:
         hint: _("Comma separated list of network interfaces to use, e.g. enp1s0, wlan0. Use 'all' to use all available interfaces.")
         validators:
           required: true
-      - type: numberInput
+      - type: select
         name: leaseTime
         label: _("Lease Time")
         value: 7200
         hint: _("The time in seconds that the sleep proxy server should keep the host's network configuration. The default is 7200 seconds (2 hours).")
+        store:
+          data:
+            - value: 7200
+              text: "2 hours (default)"
+            - value: 14400
+              text: "4 hours"
+            - value: 21600
+              text: "6 hours"
+            - value: 28800
+              text: "8 hours"
+            - value: 36000
+              text: "10 hours"
+            - value: 43200
+              text: "12 hours"
         validators:
           required: true
           min: 1800
