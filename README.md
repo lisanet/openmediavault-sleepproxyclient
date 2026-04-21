@@ -67,7 +67,7 @@ To give you an impression of the plugin's UI:
 
 ## Additional Documentation
 
-For more inforamtion about the Bonjour Sleep Proxy Service please visit the wiki of SleepProxyClient package.
+For more information about the Bonjour Sleep Proxy Service please visit the wiki of the SleepProxyClient package.
 See https://github.com/awein/SleepProxyClient/wiki
 
 ## Uninstall
