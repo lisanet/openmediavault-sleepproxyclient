@@ -1,5 +1,8 @@
+etc/*  etc/
 usr/share/openmediavault/confdb/create.d/*  usr/share/openmediavault/confdb/create.d/
 usr/share/openmediavault/datamodels/*  usr/share/openmediavault/datamodels/
 usr/share/openmediavault/engined/*   usr/share/openmediavault/engined/
 usr/share/openmediavault/workbench/*  usr/share/openmediavault/workbench/
 srv/salt/omv/deploy/sleepproxyclient/* srv/salt/omv/deploy/sleepproxyclient/
+SleepProxyClient/00_sleepproxyclient  usr/share/sleepproxyclient/scripts
+SleepProxyClient/sleepproxyclient.py  usr/share/sleepproxyclient/scripts
