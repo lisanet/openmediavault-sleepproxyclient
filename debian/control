@@ -10,7 +10,7 @@ Homepage: https://github.com/lisanet/openmediavault-sleepproxyclient
 Package: openmediavault-sleepproxyclient
 Architecture: all
 Depends: ${misc:Depends}, ${python3:Depends}, python3-dnspython,
- python3-netifaces, python3-avahi, openmediavault-autoshutdown (>= 8.0)
+ python3-netifaces, python3-avahi, avahi-utils, bc, openmediavault-autoshutdown (>= 8.0)
 Conflicts: sleepproxyclient
 Description: openmediavault plugin to enable a SleepProxyClient implemention
   This plugin enables your NAS, to save energy by going to sleep while not in use. The Sleep Proxy Server, usually an Apple TV or HomePod, will wake the device using Wake on LAN (WOL), as soon as a port matching an announced service is accessed. See http://en.wikipedia.org/wiki/Bonjour_Sleep_Proxy for more details.
