@@ -16,7 +16,7 @@ Customizable:
 
 ## Installation
 
-Download the `.deb` package from the **Releases** page and install it:
+Download the `.deb` package from the [**Releases**](https://github.com/lisanet/openmediavault-sleepproxyclient/releases) page and install it:
 
 ```
 sudo dpkg -i <packagename.deb>
