@@ -2,9 +2,9 @@
 
 configure_sleepproxyclient:
   file.managed:
-    - name: /etc/default/sleepproxyclient
+    - name: /etc/sleepproxyclient
     - source:
-      - salt://{{ tpldir }}/files/etc-default-sleepproxyclient.j2
+      - salt://{{ tpldir }}/files/etc-sleepproxyclient.j2
     - template: jinja
     - context:
         config: {{ config | json }}
