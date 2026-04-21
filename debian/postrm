@@ -14,8 +14,6 @@ case "$1" in
     omv_config_delete "/config/system/sleepproxyclient"
     ;;
   remove)
-    rm -f /etc/default/sleepproxyclient
-    dpkg-divert --package openmediavault-sleepproxyclient --rename --remove /etc/default/sleepproxyclient
     remove_actions
     ;;
   upgrade|failed-upgrade)
