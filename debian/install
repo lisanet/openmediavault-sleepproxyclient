@@ -4,5 +4,5 @@ usr/share/openmediavault/datamodels/*  usr/share/openmediavault/datamodels/
 usr/share/openmediavault/engined/*   usr/share/openmediavault/engined/
 usr/share/openmediavault/workbench/*  usr/share/openmediavault/workbench/
 srv/salt/omv/deploy/sleepproxyclient/* srv/salt/omv/deploy/sleepproxyclient/
-SleepProxyClient/00_sleepproxyclient  usr/share/sleepproxyclient/scripts
-SleepProxyClient/sleepproxyclient.py  usr/share/sleepproxyclient/scripts
+SleepProxyClient/00_sleepproxyclient  usr/lib/systemd/system-sleep/
+SleepProxyClient/sleepproxyclient.py  usr/share/sleepproxyclient/scripts/
