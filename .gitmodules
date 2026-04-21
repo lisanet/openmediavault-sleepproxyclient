@@ -1,0 +1,4 @@
+[submodule "SleepProxyClient"]
+	path = SleepProxyClient
+	url = git@github.com:lisanet/SleepProxyClient.git
+	branch = skl
