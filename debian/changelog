@@ -1,3 +1,11 @@
+openmediavault-sleepproxyclient (8.1.0-1) unstable; urgency=low
+
+  * add SleepProxyClient as submodule and only use the scripts
+  * rename config file to sleepproxyclient.conf and move from /etc/default to /etc
+  * conflicts with package sleepproxyclient
+
+ -- Simone Karin Lehmann <skl@lisanet.de>  Tue, 21 Apr 2026 12:02:26 +0200
+
 openmediavault-sleepproxyclient (8.0.0-1) unstable; urgency=low
 
   * Initial release.
