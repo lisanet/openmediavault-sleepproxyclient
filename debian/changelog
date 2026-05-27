@@ -1,3 +1,10 @@
+openmediavault-sleepproxyclient (8.2.0-1) unstable; urgency=low
+
+  * fix counting up hostnames
+  * update submodule SleepProxyClient
+
+ -- Simone Karin Lehmann <skl@lisanet.de>  Wed, 27 May 2026 19:32:31 +0200
+
 openmediavault-sleepproxyclient (8.1.1-1) unstable; urgency=low
 
   * submodule: fix location of config file
